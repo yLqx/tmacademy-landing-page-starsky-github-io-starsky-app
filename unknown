@@ -1,0 +1,12 @@
+/* Style the Sign Up button using Bootstrap classes, ensure color contrast */
+.navbar .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-white);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* <-- Transition is here */
+}
+
+.navbar .btn-primary:hover {
+    background-color: var(--bs-primary-dark); /* <-- Hover state changes color */
+    border-color: var(--bs-primary-dark);
+}

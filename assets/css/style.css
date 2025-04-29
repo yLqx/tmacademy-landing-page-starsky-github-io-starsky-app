@@ -1,0 +1,87 @@
+:root {
+  --project-primary: #0d6efd; /* Bootstrap default blue */
+  --project-secondary: #6c757d; /* Bootstrap default gray */
+  --project-accent: #198754; /* Bootstrap default green */
+  --bs-primary: var(--project-primary);
+  --bs-secondary: var(--project-secondary);
+  --bs-accent: var(--project-accent);
+
+  /* Custom gradient colors based on the provided snippet's potential intent */
+  --gradient-start: #0f2027; /* Dark color */
+  --gradient-middle: #203a43; /* Medium color */
+  --gradient-end: #2c5364; /* Light color */
+
+  --bs-primary-dark: #0a58ca; /* Slightly darker blue for hover */
+}
+
+body {
+  padding-top: 76px; /* Add padding to body to prevent fixed header from covering content. Adjust if header height changes. */
+  font-family: 'Roboto', sans-serif; /* Apply example Google Font */
+}
+
+.custom-gradient {
+  background: var(--gradient-start); /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--gradient-start), var(--gradient-middle), var(--gradient-end)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-middle), var(--gradient-end)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--bs-white); /* Ensure text is white on dark background */
+}
+
+/* Style nav links for better contrast and hover effects */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75); /* Lighter white for contrast */
+    transition: color 0.3s ease-in-out;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--bs-white); /* White on hover/active */
+}
+
+/* Style the Sign Up button using Bootstrap classes, ensure color contrast */
+.navbar .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-white);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.navbar .btn-primary:hover {
+    background-color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+}
+
+/* Ensure brand text color */
+.navbar-brand span {
+    color: var(--bs-white);
+}
+
+/* Adjust icon color in brand */
+.navbar-brand i {
+    color: var(--bs-info); /* Using Bootstrap info color for the blue cap icon */
+}
+
+/* Adjust toggler icon color */
+.navbar-toggler i {
+    color: var(--bs-white);
+}
+
+/* Add margin to nav items on large screens for separation */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item:not(:last-child) {
+    margin-right: .75rem; /* Add some spacing between nav items */
+  }
+  .navbar-nav .ms-lg-3 {
+      margin-left: 1rem !important; /* Ensure separation for button */
+  }
+   .navbar-nav .ms-lg-2 {
+      margin-left: .5rem !important; /* Ensure separation for login link */
+  }
+}
+
+/* Basic section padding */
+main section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
