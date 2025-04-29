@@ -1,0 +1,2 @@
+# tmacademy-landing-page-starsky-github-io-starsky-app
+Created with Starsky - https://starsky.app - A basic static landing page structure for TmAcademy, featuring a responsive navigation header adapted from the user's provided Tailwind snippet to Bootstrap 5, jQuery, HTML5, and CSS3. Includes core Bootstrap structure, custom CSS for theming and gradient header background, and placeholder sections.
